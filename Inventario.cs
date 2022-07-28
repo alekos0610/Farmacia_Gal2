@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Farmacia
 {
-    public partial class Form2 : Form
+    public partial class FrmInventario : Form
     {
-        public Form2()
+        public FrmInventario()
         {
             InitializeComponent();
         }
@@ -31,5 +31,22 @@ namespace Farmacia
         {
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FrmInventario_Load(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+      
     }
 }

@@ -1,7 +1,7 @@
 ﻿
 namespace Farmacia
 {
-    partial class Form2
+    partial class FrmInventario
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace Farmacia
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmInventario));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.gpbInfoPto = new System.Windows.Forms.GroupBox();
             this.txbPtacion = new System.Windows.Forms.TextBox();
@@ -77,6 +77,7 @@ namespace Farmacia
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.WaitOnLoad = true;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // gpbInfoPto
             // 
@@ -220,6 +221,7 @@ namespace Farmacia
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 5;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // gpbStock
             // 
@@ -336,7 +338,7 @@ namespace Farmacia
             this.pictureBox4.TabIndex = 11;
             this.pictureBox4.TabStop = false;
             // 
-            // Form2
+            // FrmInventario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -354,8 +356,10 @@ namespace Farmacia
             this.Controls.Add(this.lblInventario);
             this.Controls.Add(this.gpbInfoPto);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "Form2";
-            this.Text = "Form2";
+            this.Name = "FrmInventario";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Inventario";
+            this.Load += new System.EventHandler(this.FrmInventario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.gpbInfoPto.ResumeLayout(false);
             this.gpbInfoPto.PerformLayout();

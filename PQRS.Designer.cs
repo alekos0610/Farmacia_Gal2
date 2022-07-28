@@ -1,7 +1,7 @@
 ﻿
 namespace Farmacia
 {
-    partial class Form4
+    partial class FrmPQRS
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace Farmacia
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPQRS));
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.gpbPQR = new System.Windows.Forms.GroupBox();
             this.lblBarrio = new System.Windows.Forms.Label();
@@ -309,7 +309,7 @@ namespace Farmacia
             this.txbSituacion.Size = new System.Drawing.Size(351, 104);
             this.txbSituacion.TabIndex = 23;
             // 
-            // Form4
+            // FrmPQRS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -320,8 +320,9 @@ namespace Farmacia
             this.Controls.Add(this.gpbPQR);
             this.Controls.Add(this.lblSituacion);
             this.Controls.Add(this.pictureBox2);
-            this.Name = "Form4";
-            this.Text = "Form4";
+            this.Name = "FrmPQRS";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "PQRS";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.gpbPQR.ResumeLayout(false);
             this.gpbPQR.PerformLayout();

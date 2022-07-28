@@ -10,19 +10,19 @@ using System.Windows.Forms;
 
 namespace Farmacia
 {
-    public partial class Form3 : Form
+    public partial class FrmPQRS : Form
     {
-        public Form3()
+        public FrmPQRS()
         {
             InitializeComponent();
         }
 
-        private void lblPresentacion_Click(object sender, EventArgs e)
+        private void gpbPQR_Enter(object sender, EventArgs e)
         {
 
         }
 
-        private void lblDireccion_Click(object sender, EventArgs e)
+        private void txbRecurso_TextChanged(object sender, EventArgs e)
         {
 
         }

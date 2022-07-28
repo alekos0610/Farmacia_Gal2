@@ -10,24 +10,19 @@ using System.Windows.Forms;
 
 namespace Farmacia
 {
-    public partial class Form1 : Form
+    public partial class FrmRecuperación : Form
     {
-        public Form1()
+        public FrmRecuperación()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void lblTitulo_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void txtCorreo_TextChanged(object sender, EventArgs e)
         {
 
         }

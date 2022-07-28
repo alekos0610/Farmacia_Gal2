@@ -46,43 +46,58 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Formulario 1.cs">
+    <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formulario 1.Designer.cs">
-      <DependentUpon>Formulario 1.cs</DependentUpon>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formulario 2.cs">
+    <Compile Include="Inventario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formulario 2.Designer.cs">
-      <DependentUpon>Formulario 2.cs</DependentUpon>
+    <Compile Include="Inventario.Designer.cs">
+      <DependentUpon>Inventario.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formulario 3.cs">
+    <Compile Include="Domicilios.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formulario 3.Designer.cs">
-      <DependentUpon>Formulario 3.cs</DependentUpon>
+    <Compile Include="Domicilios.Designer.cs">
+      <DependentUpon>Domicilios.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formulario 4.cs">
+    <Compile Include="PQRS.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formulario 4.Designer.cs">
-      <DependentUpon>Formulario 4.cs</DependentUpon>
+    <Compile Include="PQRS.Designer.cs">
+      <DependentUpon>PQRS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="principal.Designer.cs">
+      <DependentUpon>principal.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Formulario 1.resx">
-      <DependentUpon>Formulario 1.cs</DependentUpon>
+    <Compile Include="recuperación.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="recuperación.Designer.cs">
+      <DependentUpon>recuperación.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formulario 2.resx">
-      <DependentUpon>Formulario 2.cs</DependentUpon>
+    <EmbeddedResource Include="Inventario.resx">
+      <DependentUpon>Inventario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formulario 3.resx">
-      <DependentUpon>Formulario 3.cs</DependentUpon>
+    <EmbeddedResource Include="Domicilios.resx">
+      <DependentUpon>Domicilios.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formulario 4.resx">
-      <DependentUpon>Formulario 4.cs</DependentUpon>
+    <EmbeddedResource Include="PQRS.resx">
+      <DependentUpon>PQRS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="principal.resx">
+      <DependentUpon>principal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -93,6 +108,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="recuperación.resx">
+      <DependentUpon>recuperación.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
