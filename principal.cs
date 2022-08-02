@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Farmacia
@@ -32,17 +25,19 @@ namespace Farmacia
             // Botón Inventario, lleva a form inventario al dar click
             Form FrmPrincipal = new FrmInventario();
             FrmPrincipal.ShowDialog();
-            
+
         }
 
         private void btnDomicilio_Click(object sender, EventArgs e)
         {
+            // Botón Inventario, lleva a form Domicilio al dar click
             Form FrmPrincipal = new FrmDomicilios();
             FrmPrincipal.ShowDialog();
         }
 
         private void btnPQRS_Click(object sender, EventArgs e)
         {
+            // Botón Inventario, lleva a form PQRS al dar click
             Form FrmPrincipal = new FrmPQRS();
             FrmPrincipal.ShowDialog();
         }
@@ -62,6 +57,11 @@ namespace Farmacia
         {
             //Terminar la aplicación
             Application.Exit();
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
         }
     }
 }

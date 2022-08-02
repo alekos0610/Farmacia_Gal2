@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Farmacia
@@ -15,38 +8,48 @@ namespace Farmacia
         public FrmInventario()
         {
             InitializeComponent();
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void gpbInfoPto_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
+        }                              
 
         private void FrmInventario_Load(object sender, EventArgs e)
         {
-           
+            // Se crea lista desplegable para selección de presentación en inventario.
+            cmbPresentacion.Items.Add("Cápsula");
+            cmbPresentacion.Items.Add("Comprimido");
+            cmbPresentacion.Items.Add("Grajea");
+            cmbPresentacion.Items.Add("Jarabe");
+            cmbPresentacion.Items.Add("Suspensión");
+            cmbPresentacion.Items.Add("Polvo");
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+                      
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+          
+        private void lblFechaInv_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnNuevo_Click(object sender, EventArgs e)
         {
             
         }
 
-      
+        private void txbEstante_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           
+        }
     }
 }
+
