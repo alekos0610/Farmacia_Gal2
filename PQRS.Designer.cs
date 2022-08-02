@@ -98,7 +98,6 @@ namespace Farmacia
             this.gpbPQR.TabIndex = 2;
             this.gpbPQR.TabStop = false;
             this.gpbPQR.Text = "Información PQR";
-            this.gpbPQR.Enter += new System.EventHandler(this.gpbPQR_Enter);
             // 
             // lblBarrio
             // 
@@ -117,7 +116,6 @@ namespace Farmacia
             this.txbRecurso.Name = "txbRecurso";
             this.txbRecurso.Size = new System.Drawing.Size(168, 22);
             this.txbRecurso.TabIndex = 15;
-            this.txbRecurso.TextChanged += new System.EventHandler(this.txbRecurso_TextChanged);
             // 
             // label2
             // 

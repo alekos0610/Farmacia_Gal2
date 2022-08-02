@@ -44,7 +44,6 @@
             this.lblTitulo.TabIndex = 0;
             this.lblTitulo.Text = "Restablecer tu\r\n Contraseña\r\n";
             this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.lblTitulo.Click += new System.EventHandler(this.lblTitulo_Click);
             // 
             // lblMensaje
             // 
@@ -65,7 +64,6 @@
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.Size = new System.Drawing.Size(316, 41);
             this.txtCorreo.TabIndex = 2;
-            this.txtCorreo.TextChanged += new System.EventHandler(this.txtCorreo_TextChanged);
             // 
             // btnEnviar
             // 

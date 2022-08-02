@@ -48,7 +48,6 @@
             this.menuStrip1.Size = new System.Drawing.Size(484, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
-            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // opcionesDeUsuarioToolStripMenuItem
             // 
@@ -58,7 +57,6 @@
             this.opcionesDeUsuarioToolStripMenuItem.Name = "opcionesDeUsuarioToolStripMenuItem";
             this.opcionesDeUsuarioToolStripMenuItem.Size = new System.Drawing.Size(89, 20);
             this.opcionesDeUsuarioToolStripMenuItem.Text = "Salida Segura";
-            this.opcionesDeUsuarioToolStripMenuItem.Click += new System.EventHandler(this.opcionesDeUsuarioToolStripMenuItem_Click);
             // 
             // cerrarSesiónToolStripMenuItem
             // 
@@ -119,7 +117,6 @@
             this.lblTitulo.Size = new System.Drawing.Size(291, 24);
             this.lblTitulo.TabIndex = 4;
             this.lblTitulo.Text = "Bienvenido a Farmacia Galera";
-            this.lblTitulo.Click += new System.EventHandler(this.lblTitulo_Click);
             // 
             // FrmPrincipal
             // 

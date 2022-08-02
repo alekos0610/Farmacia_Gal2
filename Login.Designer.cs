@@ -57,7 +57,6 @@ namespace Farmacia
             this.pibLogin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pibLogin.TabIndex = 0;
             this.pibLogin.TabStop = false;
-            this.pibLogin.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // lblUsuario
             // 
@@ -69,7 +68,6 @@ namespace Farmacia
             this.lblUsuario.Size = new System.Drawing.Size(54, 16);
             this.lblUsuario.TabIndex = 1;
             this.lblUsuario.Text = "Usuario";
-            this.lblUsuario.Click += new System.EventHandler(this.lblUsuario_Click);
             // 
             // lblContraseña
             // 
@@ -81,7 +79,6 @@ namespace Farmacia
             this.lblContraseña.Size = new System.Drawing.Size(76, 16);
             this.lblContraseña.TabIndex = 2;
             this.lblContraseña.Text = "Contraseña";
-            this.lblContraseña.Click += new System.EventHandler(this.label1_Click);
             // 
             // btnIngresar
             // 
@@ -147,7 +144,6 @@ namespace Farmacia
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(153, 20);
             this.txtUsuario.TabIndex = 12;
-            this.txtUsuario.TextChanged += new System.EventHandler(this.txtUsuario_TextChanged);
             // 
             // txtContraseña
             // 
@@ -155,7 +151,6 @@ namespace Farmacia
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.Size = new System.Drawing.Size(154, 20);
             this.txtContraseña.TabIndex = 13;
-            this.txtContraseña.TextChanged += new System.EventHandler(this.txtContraseña_TextChanged);
             // 
             // lnkrecuperar
             // 

@@ -15,25 +15,7 @@ namespace Farmacia
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void pbMostrar_Click(object sender, EventArgs e)
         {
@@ -52,10 +34,6 @@ namespace Farmacia
             txtContraseña.PasswordChar = '\0';
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
@@ -113,19 +91,6 @@ namespace Farmacia
             Form.ShowDialog();
         }
 
-        private void txtContraseña_TextChanged(object sender, EventArgs e)
-        {
 
-        }
-
-        private void lblUsuario_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtUsuario_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

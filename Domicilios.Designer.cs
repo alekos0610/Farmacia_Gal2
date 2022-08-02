@@ -220,7 +220,6 @@ namespace Farmacia
             this.lblPresentacion.Size = new System.Drawing.Size(86, 16);
             this.lblPresentacion.TabIndex = 2;
             this.lblPresentacion.Text = "Presentación";
-            this.lblPresentacion.Click += new System.EventHandler(this.lblPresentacion_Click);
             // 
             // lblConcentracion
             // 
@@ -361,7 +360,6 @@ namespace Farmacia
             this.lblDireccion.Size = new System.Drawing.Size(64, 16);
             this.lblDireccion.TabIndex = 18;
             this.lblDireccion.Text = "Dirección";
-            this.lblDireccion.Click += new System.EventHandler(this.lblDireccion_Click);
             // 
             // lblNumId
             // 
@@ -406,6 +404,7 @@ namespace Farmacia
             this.Name = "FrmDomicilios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Domicilios";
+            this.Load += new System.EventHandler(this.FrmDomicilios_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.gpbInfoPedido.ResumeLayout(false);
             this.gpbInfoPedido.PerformLayout();

@@ -10,12 +10,7 @@ namespace Farmacia
             InitializeComponent();
         }
 
-        private void lblPresentacion_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblDireccion_Click(object sender, EventArgs e)
+        private void FrmDomicilios_Load(object sender, EventArgs e)
         {
 
         }

@@ -169,7 +169,6 @@ namespace Farmacia
             this.txbEstante.Name = "txbEstante";
             this.txbEstante.Size = new System.Drawing.Size(249, 22);
             this.txbEstante.TabIndex = 5;
-            this.txbEstante.TextChanged += new System.EventHandler(this.txbEstante_TextChanged);
             // 
             // lblInventario
             // 
@@ -192,7 +191,7 @@ namespace Farmacia
             this.lblFechaInv.Size = new System.Drawing.Size(51, 16);
             this.lblFechaInv.TabIndex = 4;
             this.lblFechaInv.Text = "Fecha: ";
-            this.lblFechaInv.Click += new System.EventHandler(this.lblFechaInv_Click_1);
+
             // 
             // gpbStock
             // 
@@ -275,7 +274,7 @@ namespace Farmacia
             this.btnNuevo.TabIndex = 2;
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.UseVisualStyleBackColor = false;
-            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
+
             // 
             // btnEliminar
             // 
@@ -333,7 +332,6 @@ namespace Farmacia
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.WaitOnLoad = true;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
             // 
             // cmbPresentacion
             // 
@@ -342,7 +340,7 @@ namespace Farmacia
             this.cmbPresentacion.Name = "cmbPresentacion";
             this.cmbPresentacion.Size = new System.Drawing.Size(249, 24);
             this.cmbPresentacion.TabIndex = 9;
-            this.cmbPresentacion.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+
             // 
             // FrmInventario
             // 

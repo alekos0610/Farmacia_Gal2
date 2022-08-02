@@ -15,11 +15,7 @@ namespace Farmacia
             MessageBox.Show("Usuario Autenticado:", "Bienvenido a Farmacia Galera");
         }
 
-        private void lblTitulo_Click(object sender, EventArgs e)
-        {
-
-        }
-
+ 
         private void btnInventario_Click(object sender, EventArgs e)
         {
             // Botón Inventario, lleva a form inventario al dar click
@@ -42,10 +38,6 @@ namespace Farmacia
             FrmPrincipal.ShowDialog();
         }
 
-        private void opcionesDeUsuarioToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void cerrarSesiónToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -59,9 +51,6 @@ namespace Farmacia
             Application.Exit();
         }
 
-        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
 
-        }
     }
 }

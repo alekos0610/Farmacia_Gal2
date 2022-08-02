@@ -9,15 +9,5 @@ namespace Farmacia
         {
             InitializeComponent();
         }
-
-        private void gpbPQR_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txbRecurso_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }
