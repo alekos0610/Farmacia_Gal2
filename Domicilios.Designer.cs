@@ -48,12 +48,11 @@ namespace Farmacia
             this.lblConcentracion = new System.Windows.Forms.Label();
             this.lblProducto = new System.Windows.Forms.Label();
             this.gpbUbicacion = new System.Windows.Forms.GroupBox();
+            this.btnCerrar = new System.Windows.Forms.Button();
             this.txbTel = new System.Windows.Forms.TextBox();
             this.txbDireccion = new System.Windows.Forms.TextBox();
             this.txbBarrio = new System.Windows.Forms.TextBox();
-            this.txbNomDomiciliario = new System.Windows.Forms.TextBox();
             this.txbNomUsuario = new System.Windows.Forms.TextBox();
-            this.txbTipId = new System.Windows.Forms.TextBox();
             this.txbNumId = new System.Windows.Forms.TextBox();
             this.lblNomDomiciliario = new System.Windows.Forms.Label();
             this.lblTel = new System.Windows.Forms.Label();
@@ -62,6 +61,8 @@ namespace Farmacia
             this.lblNumId = new System.Windows.Forms.Label();
             this.lblTipoId = new System.Windows.Forms.Label();
             this.lblNomUsuario = new System.Windows.Forms.Label();
+            this.cmbTipoID = new System.Windows.Forms.ComboBox();
+            this.cmbDomiciliario = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.gpbInfoPedido.SuspendLayout();
             this.gpbUbicacion.SuspendLayout();
@@ -243,12 +244,13 @@ namespace Farmacia
             // 
             // gpbUbicacion
             // 
+            this.gpbUbicacion.Controls.Add(this.cmbDomiciliario);
+            this.gpbUbicacion.Controls.Add(this.cmbTipoID);
+            this.gpbUbicacion.Controls.Add(this.btnCerrar);
             this.gpbUbicacion.Controls.Add(this.txbTel);
             this.gpbUbicacion.Controls.Add(this.txbDireccion);
             this.gpbUbicacion.Controls.Add(this.txbBarrio);
-            this.gpbUbicacion.Controls.Add(this.txbNomDomiciliario);
             this.gpbUbicacion.Controls.Add(this.txbNomUsuario);
-            this.gpbUbicacion.Controls.Add(this.txbTipId);
             this.gpbUbicacion.Controls.Add(this.txbNumId);
             this.gpbUbicacion.Controls.Add(this.lblNomDomiciliario);
             this.gpbUbicacion.Controls.Add(this.lblTel);
@@ -264,6 +266,18 @@ namespace Farmacia
             this.gpbUbicacion.TabIndex = 7;
             this.gpbUbicacion.TabStop = false;
             this.gpbUbicacion.Text = "Información del usuario";
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnCerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCerrar.Location = new System.Drawing.Point(556, 142);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(79, 34);
+            this.btnCerrar.TabIndex = 8;
+            this.btnCerrar.Text = "Cerrar";
+            this.btnCerrar.UseVisualStyleBackColor = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // txbTel
             // 
@@ -289,14 +303,6 @@ namespace Farmacia
             this.txbBarrio.Size = new System.Drawing.Size(139, 22);
             this.txbBarrio.TabIndex = 25;
             // 
-            // txbNomDomiciliario
-            // 
-            this.txbNomDomiciliario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txbNomDomiciliario.Location = new System.Drawing.Point(181, 114);
-            this.txbNomDomiciliario.Name = "txbNomDomiciliario";
-            this.txbNomDomiciliario.Size = new System.Drawing.Size(162, 22);
-            this.txbNomDomiciliario.TabIndex = 24;
-            // 
             // txbNomUsuario
             // 
             this.txbNomUsuario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -304,14 +310,6 @@ namespace Farmacia
             this.txbNomUsuario.Name = "txbNomUsuario";
             this.txbNomUsuario.Size = new System.Drawing.Size(162, 22);
             this.txbNomUsuario.TabIndex = 23;
-            // 
-            // txbTipId
-            // 
-            this.txbTipId.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txbTipId.Location = new System.Drawing.Point(181, 57);
-            this.txbTipId.Name = "txbTipId";
-            this.txbTipId.Size = new System.Drawing.Size(162, 22);
-            this.txbTipId.TabIndex = 22;
             // 
             // txbNumId
             // 
@@ -391,6 +389,22 @@ namespace Farmacia
             this.lblNomUsuario.TabIndex = 15;
             this.lblNomUsuario.Text = "Nombre completo";
             // 
+            // cmbTipoID
+            // 
+            this.cmbTipoID.FormattingEnabled = true;
+            this.cmbTipoID.Location = new System.Drawing.Point(181, 57);
+            this.cmbTipoID.Name = "cmbTipoID";
+            this.cmbTipoID.Size = new System.Drawing.Size(162, 24);
+            this.cmbTipoID.TabIndex = 15;
+            // 
+            // cmbDomiciliario
+            // 
+            this.cmbDomiciliario.FormattingEnabled = true;
+            this.cmbDomiciliario.Location = new System.Drawing.Point(181, 116);
+            this.cmbDomiciliario.Name = "cmbDomiciliario";
+            this.cmbDomiciliario.Size = new System.Drawing.Size(162, 24);
+            this.cmbDomiciliario.TabIndex = 28;
+            // 
             // FrmDomicilios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -445,9 +459,10 @@ namespace Farmacia
         private System.Windows.Forms.TextBox txbTel;
         private System.Windows.Forms.TextBox txbDireccion;
         private System.Windows.Forms.TextBox txbBarrio;
-        private System.Windows.Forms.TextBox txbNomDomiciliario;
         private System.Windows.Forms.TextBox txbNomUsuario;
-        private System.Windows.Forms.TextBox txbTipId;
         private System.Windows.Forms.TextBox txbNumId;
+        private System.Windows.Forms.Button btnCerrar;
+        private System.Windows.Forms.ComboBox cmbTipoID;
+        private System.Windows.Forms.ComboBox cmbDomiciliario;
     }
 }

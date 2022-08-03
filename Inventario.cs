@@ -19,8 +19,15 @@ namespace Farmacia
             cmbPresentacion.Items.Add("Jarabe");
             cmbPresentacion.Items.Add("Suspensión");
             cmbPresentacion.Items.Add("Polvo");
-        }                                    
-        
+        }
+
+        private void btnCerrarInventario_Click(object sender, EventArgs e)
+        {
+            //Botón para cerrar ventana y retornar a menú principal
+            this.Close();
+        }
+
+       
     }
 }
 

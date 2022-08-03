@@ -31,6 +31,7 @@ namespace Farmacia
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmInventario));
             this.gpbInfoPto = new System.Windows.Forms.GroupBox();
+            this.cmbPresentacion = new System.Windows.Forms.ComboBox();
             this.lblPresentacion = new System.Windows.Forms.Label();
             this.txbCtracion = new System.Windows.Forms.TextBox();
             this.lblConcentracion = new System.Windows.Forms.Label();
@@ -56,7 +57,7 @@ namespace Farmacia
             this.dtpFechaInvetario = new System.Windows.Forms.DateTimePicker();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.cmbPresentacion = new System.Windows.Forms.ComboBox();
+            this.btnCerrarInventario = new System.Windows.Forms.Button();
             this.gpbInfoPto.SuspendLayout();
             this.gpbStock.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -87,6 +88,14 @@ namespace Farmacia
             this.gpbInfoPto.TabIndex = 1;
             this.gpbInfoPto.TabStop = false;
             this.gpbInfoPto.Text = "Información del producto";
+            // 
+            // cmbPresentacion
+            // 
+            this.cmbPresentacion.FormattingEnabled = true;
+            this.cmbPresentacion.Location = new System.Drawing.Point(205, 188);
+            this.cmbPresentacion.Name = "cmbPresentacion";
+            this.cmbPresentacion.Size = new System.Drawing.Size(249, 24);
+            this.cmbPresentacion.TabIndex = 9;
             // 
             // lblPresentacion
             // 
@@ -191,7 +200,6 @@ namespace Farmacia
             this.lblFechaInv.Size = new System.Drawing.Size(51, 16);
             this.lblFechaInv.TabIndex = 4;
             this.lblFechaInv.Text = "Fecha: ";
-
             // 
             // gpbStock
             // 
@@ -274,7 +282,6 @@ namespace Farmacia
             this.btnNuevo.TabIndex = 2;
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.UseVisualStyleBackColor = false;
-
             // 
             // btnEliminar
             // 
@@ -333,14 +340,17 @@ namespace Farmacia
             this.pictureBox1.TabStop = false;
             this.pictureBox1.WaitOnLoad = true;
             // 
-            // cmbPresentacion
+            // btnCerrarInventario
             // 
-            this.cmbPresentacion.FormattingEnabled = true;
-            this.cmbPresentacion.Location = new System.Drawing.Point(205, 188);
-            this.cmbPresentacion.Name = "cmbPresentacion";
-            this.cmbPresentacion.Size = new System.Drawing.Size(249, 24);
-            this.cmbPresentacion.TabIndex = 9;
-
+            this.btnCerrarInventario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnCerrarInventario.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCerrarInventario.Location = new System.Drawing.Point(656, 380);
+            this.btnCerrarInventario.Name = "btnCerrarInventario";
+            this.btnCerrarInventario.Size = new System.Drawing.Size(75, 37);
+            this.btnCerrarInventario.TabIndex = 13;
+            this.btnCerrarInventario.Text = "Cerrar";
+            this.btnCerrarInventario.UseVisualStyleBackColor = false;
+            this.btnCerrarInventario.Click += new System.EventHandler(this.btnCerrarInventario_Click);
             // 
             // FrmInventario
             // 
@@ -348,6 +358,7 @@ namespace Farmacia
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnCerrarInventario);
             this.Controls.Add(this.dtpFechaInvetario);
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.pictureBox3);
@@ -405,5 +416,6 @@ namespace Farmacia
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ComboBox cmbPresentacion;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.Button btnCerrarInventario;
     }
 }
