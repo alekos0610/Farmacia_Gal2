@@ -144,7 +144,7 @@ namespace Farmacia
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(153, 20);
             this.txtUsuario.TabIndex = 12;
-            this.txtUsuario.Text = "a";
+            this.txtUsuario.Text = "aa";
             // 
             // txtContraseña
             // 
@@ -182,7 +182,7 @@ namespace Farmacia
             this.Controls.Add(this.pibLogin);
             this.Name = "login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Login";
+            this.Text = "Login";           
             ((System.ComponentModel.ISupportInitialize)(this.pibLogin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbOcultar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMostrar)).EndInit();

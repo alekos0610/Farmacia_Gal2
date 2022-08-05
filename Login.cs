@@ -7,15 +7,13 @@ namespace Farmacia
     {
         // Se declaran dos variables globales para la Validación
         // Esto a futuro será reemplazado por la validación desde la base de datos
-        string Usuario = "a";
-        string Contraseña = "a";
+        string Usuario = "as";
+        string Contraseña = "as";
 
         public login()
         {
             InitializeComponent();
-        }
-
-       
+        }              
 
         private void pbMostrar_Click(object sender, EventArgs e)
         {
@@ -34,7 +32,6 @@ namespace Farmacia
             txtContraseña.PasswordChar = '\0';
         }
 
-
         private void btnIngresar_Click(object sender, EventArgs e)
         {
             // Si el usuario es diferente a datos de validación
@@ -52,6 +49,7 @@ namespace Farmacia
                     //Acción return para que no continúe ejecutandose el codigo siguiente
                     return;
                 }
+
                 //Se verifica la caja de texto contraseña
                 if (txtContraseña.Text != Contraseña)
                 {
@@ -76,12 +74,7 @@ namespace Farmacia
                 // ShowDialog para solo poder interactuar con el formulario nuevo y no saltar de uno a otro.
                 Form.ShowDialog();
             }
-        }
-
-        private void btnOlvCont_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Por favor ponte en contacto con el administrador del sistema");
-        }
+        }              
 
         private void lnkrecuperar_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
@@ -90,7 +83,6 @@ namespace Farmacia
             // ShowDialog para solo poder interactuar con el formulario nuevo y no saltar de uno a otro.
             Form.ShowDialog();
         }
-
-
+                
     }
 }

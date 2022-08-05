@@ -40,7 +40,6 @@ namespace Farmacia
             this.txbCodigo = new System.Windows.Forms.TextBox();
             this.lblCodigo = new System.Windows.Forms.Label();
             this.lblEstante = new System.Windows.Forms.Label();
-            this.txbEstante = new System.Windows.Forms.TextBox();
             this.lblInventario = new System.Windows.Forms.Label();
             this.lblFechaInv = new System.Windows.Forms.Label();
             this.gpbStock = new System.Windows.Forms.GroupBox();
@@ -58,6 +57,7 @@ namespace Farmacia
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.btnCerrarInventario = new System.Windows.Forms.Button();
+            this.cmbEstante = new System.Windows.Forms.ComboBox();
             this.gpbInfoPto.SuspendLayout();
             this.gpbStock.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -69,6 +69,7 @@ namespace Farmacia
             // gpbInfoPto
             // 
             this.gpbInfoPto.BackColor = System.Drawing.Color.White;
+            this.gpbInfoPto.Controls.Add(this.cmbEstante);
             this.gpbInfoPto.Controls.Add(this.cmbPresentacion);
             this.gpbInfoPto.Controls.Add(this.lblPresentacion);
             this.gpbInfoPto.Controls.Add(this.txbCtracion);
@@ -78,7 +79,6 @@ namespace Farmacia
             this.gpbInfoPto.Controls.Add(this.txbCodigo);
             this.gpbInfoPto.Controls.Add(this.lblCodigo);
             this.gpbInfoPto.Controls.Add(this.lblEstante);
-            this.gpbInfoPto.Controls.Add(this.txbEstante);
             this.gpbInfoPto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.gpbInfoPto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gpbInfoPto.ForeColor = System.Drawing.Color.Black;
@@ -170,14 +170,6 @@ namespace Farmacia
             this.lblEstante.Size = new System.Drawing.Size(121, 16);
             this.lblEstante.TabIndex = 0;
             this.lblEstante.Text = "Número de estante";
-            // 
-            // txbEstante
-            // 
-            this.txbEstante.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txbEstante.Location = new System.Drawing.Point(205, 41);
-            this.txbEstante.Name = "txbEstante";
-            this.txbEstante.Size = new System.Drawing.Size(249, 22);
-            this.txbEstante.TabIndex = 5;
             // 
             // lblInventario
             // 
@@ -352,6 +344,14 @@ namespace Farmacia
             this.btnCerrarInventario.UseVisualStyleBackColor = false;
             this.btnCerrarInventario.Click += new System.EventHandler(this.btnCerrarInventario_Click);
             // 
+            // cmbEstante
+            // 
+            this.cmbEstante.FormattingEnabled = true;
+            this.cmbEstante.Location = new System.Drawing.Point(205, 41);
+            this.cmbEstante.Name = "cmbEstante";
+            this.cmbEstante.Size = new System.Drawing.Size(249, 24);
+            this.cmbEstante.TabIndex = 10;
+            // 
             // FrmInventario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -397,7 +397,6 @@ namespace Farmacia
         private System.Windows.Forms.TextBox txbCtracion;
         private System.Windows.Forms.TextBox txbProducto;
         private System.Windows.Forms.TextBox txbCodigo;
-        private System.Windows.Forms.TextBox txbEstante;
         private System.Windows.Forms.TextBox txbVenc;
         private System.Windows.Forms.TextBox txbCant;
         private System.Windows.Forms.Label lblPresentacion;
@@ -417,5 +416,6 @@ namespace Farmacia
         private System.Windows.Forms.ComboBox cmbPresentacion;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Button btnCerrarInventario;
+        private System.Windows.Forms.ComboBox cmbEstante;
     }
 }

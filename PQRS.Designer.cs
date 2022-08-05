@@ -121,7 +121,7 @@ namespace Farmacia
             // lblDireccion
             // 
             this.lblDireccion.AutoSize = true;
-            this.lblDireccion.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.lblDireccion.BackColor = System.Drawing.Color.Transparent;
             this.lblDireccion.Location = new System.Drawing.Point(116, 189);
             this.lblDireccion.Name = "lblDireccion";
             this.lblDireccion.Size = new System.Drawing.Size(64, 16);
@@ -175,7 +175,7 @@ namespace Farmacia
             // lblNombres
             // 
             this.lblNombres.AutoSize = true;
-            this.lblNombres.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.lblNombres.BackColor = System.Drawing.Color.Transparent;
             this.lblNombres.Location = new System.Drawing.Point(51, 131);
             this.lblNombres.Name = "lblNombres";
             this.lblNombres.Size = new System.Drawing.Size(129, 16);
@@ -201,6 +201,7 @@ namespace Farmacia
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
+            this.lblEmail.BackColor = System.Drawing.Color.LightSteelBlue;
             this.lblEmail.Location = new System.Drawing.Point(139, 217);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(41, 16);
@@ -210,6 +211,7 @@ namespace Farmacia
             // lblTel
             // 
             this.lblTel.AutoSize = true;
+            this.lblTel.BackColor = System.Drawing.Color.LightSteelBlue;
             this.lblTel.Location = new System.Drawing.Point(119, 161);
             this.lblTel.Name = "lblTel";
             this.lblTel.Size = new System.Drawing.Size(61, 16);

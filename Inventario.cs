@@ -19,6 +19,12 @@ namespace Farmacia
             cmbPresentacion.Items.Add("Jarabe");
             cmbPresentacion.Items.Add("Suspensión");
             cmbPresentacion.Items.Add("Polvo");
+
+            //// Se crea lista desplegable para selección de estante en inventario.
+            cmbEstante.Items.Add("1");
+            cmbEstante.Items.Add("2");
+            cmbEstante.Items.Add("3");
+            cmbEstante.Items.Add("4");
         }
 
         private void btnCerrarInventario_Click(object sender, EventArgs e)
