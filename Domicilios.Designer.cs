@@ -147,6 +147,7 @@ namespace Farmacia
             this.txtCantidad.Name = "txtCantidad";
             this.txtCantidad.Size = new System.Drawing.Size(139, 22);
             this.txtCantidad.TabIndex = 11;
+            this.txtCantidad.Validating += new System.ComponentModel.CancelEventHandler(this.txtCantidad_Validating);
             // 
             // lblCantidad
             // 
