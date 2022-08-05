@@ -37,19 +37,19 @@ namespace Farmacia
             this.btnCerrarPQRS = new System.Windows.Forms.Button();
             this.lblDireccion = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txbDireccion = new System.Windows.Forms.TextBox();
-            this.txbNumId = new System.Windows.Forms.TextBox();
+            this.txtDireccion = new System.Windows.Forms.TextBox();
+            this.txtNumId = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txbNombres = new System.Windows.Forms.TextBox();
+            this.txtNombres = new System.Windows.Forms.TextBox();
             this.lblNombres = new System.Windows.Forms.Label();
-            this.txbEmail = new System.Windows.Forms.TextBox();
-            this.txbTel = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtTel = new System.Windows.Forms.TextBox();
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblTel = new System.Windows.Forms.Label();
             this.lblTipId = new System.Windows.Forms.Label();
             this.lblInventario = new System.Windows.Forms.Label();
             this.lblDescripcion = new System.Windows.Forms.Label();
-            this.txbSituacion = new System.Windows.Forms.TextBox();
+            this.txtSituacion = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.gpbPQR.SuspendLayout();
             this.SuspendLayout();
@@ -71,13 +71,13 @@ namespace Farmacia
             this.gpbPQR.Controls.Add(this.btnCerrarPQRS);
             this.gpbPQR.Controls.Add(this.lblDireccion);
             this.gpbPQR.Controls.Add(this.label2);
-            this.gpbPQR.Controls.Add(this.txbDireccion);
-            this.gpbPQR.Controls.Add(this.txbNumId);
+            this.gpbPQR.Controls.Add(this.txtDireccion);
+            this.gpbPQR.Controls.Add(this.txtNumId);
             this.gpbPQR.Controls.Add(this.label1);
-            this.gpbPQR.Controls.Add(this.txbNombres);
+            this.gpbPQR.Controls.Add(this.txtNombres);
             this.gpbPQR.Controls.Add(this.lblNombres);
-            this.gpbPQR.Controls.Add(this.txbEmail);
-            this.gpbPQR.Controls.Add(this.txbTel);
+            this.gpbPQR.Controls.Add(this.txtEmail);
+            this.gpbPQR.Controls.Add(this.txtTel);
             this.gpbPQR.Controls.Add(this.lblEmail);
             this.gpbPQR.Controls.Add(this.lblTel);
             this.gpbPQR.Controls.Add(this.lblTipId);
@@ -138,21 +138,21 @@ namespace Farmacia
             this.label2.TabIndex = 7;
             this.label2.Text = "Tipo de Solicitud";
             // 
-            // txbDireccion
+            // txtDireccion
             // 
-            this.txbDireccion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txbDireccion.Location = new System.Drawing.Point(186, 187);
-            this.txbDireccion.Name = "txbDireccion";
-            this.txbDireccion.Size = new System.Drawing.Size(168, 22);
-            this.txbDireccion.TabIndex = 13;
+            this.txtDireccion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDireccion.Location = new System.Drawing.Point(186, 187);
+            this.txtDireccion.Name = "txtDireccion";
+            this.txtDireccion.Size = new System.Drawing.Size(168, 22);
+            this.txtDireccion.TabIndex = 13;
             // 
-            // txbNumId
+            // txtNumId
             // 
-            this.txbNumId.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txbNumId.Location = new System.Drawing.Point(186, 99);
-            this.txbNumId.Name = "txbNumId";
-            this.txbNumId.Size = new System.Drawing.Size(168, 22);
-            this.txbNumId.TabIndex = 11;
+            this.txtNumId.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtNumId.Location = new System.Drawing.Point(186, 99);
+            this.txtNumId.Name = "txtNumId";
+            this.txtNumId.Size = new System.Drawing.Size(168, 22);
+            this.txtNumId.TabIndex = 11;
             // 
             // label1
             // 
@@ -164,13 +164,13 @@ namespace Farmacia
             this.label1.TabIndex = 2;
             this.label1.Text = "Número de identificación";
             // 
-            // txbNombres
+            // txtNombres
             // 
-            this.txbNombres.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txbNombres.Location = new System.Drawing.Point(186, 129);
-            this.txbNombres.Name = "txbNombres";
-            this.txbNombres.Size = new System.Drawing.Size(168, 22);
-            this.txbNombres.TabIndex = 9;
+            this.txtNombres.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtNombres.Location = new System.Drawing.Point(186, 129);
+            this.txtNombres.Name = "txtNombres";
+            this.txtNombres.Size = new System.Drawing.Size(168, 22);
+            this.txtNombres.TabIndex = 9;
             // 
             // lblNombres
             // 
@@ -182,21 +182,21 @@ namespace Farmacia
             this.lblNombres.TabIndex = 0;
             this.lblNombres.Text = "Nombres completos";
             // 
-            // txbEmail
+            // txtEmail
             // 
-            this.txbEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txbEmail.Location = new System.Drawing.Point(186, 215);
-            this.txbEmail.Name = "txbEmail";
-            this.txbEmail.Size = new System.Drawing.Size(168, 22);
-            this.txbEmail.TabIndex = 14;
+            this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtEmail.Location = new System.Drawing.Point(186, 215);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(168, 22);
+            this.txtEmail.TabIndex = 14;
             // 
-            // txbTel
+            // txtTel
             // 
-            this.txbTel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txbTel.Location = new System.Drawing.Point(186, 159);
-            this.txbTel.Name = "txbTel";
-            this.txbTel.Size = new System.Drawing.Size(168, 22);
-            this.txbTel.TabIndex = 12;
+            this.txtTel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtTel.Location = new System.Drawing.Point(186, 159);
+            this.txtTel.Name = "txtTel";
+            this.txtTel.Size = new System.Drawing.Size(168, 22);
+            this.txtTel.TabIndex = 12;
             // 
             // lblEmail
             // 
@@ -250,14 +250,14 @@ namespace Farmacia
             this.lblDescripcion.TabIndex = 8;
             this.lblDescripcion.Text = "Descripción de la solicitud";
             // 
-            // txbSituacion
+            // txtSituacion
             // 
-            this.txbSituacion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txbSituacion.Location = new System.Drawing.Point(437, 269);
-            this.txbSituacion.Multiline = true;
-            this.txbSituacion.Name = "txbSituacion";
-            this.txbSituacion.Size = new System.Drawing.Size(351, 169);
-            this.txbSituacion.TabIndex = 23;
+            this.txtSituacion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtSituacion.Location = new System.Drawing.Point(437, 269);
+            this.txtSituacion.Multiline = true;
+            this.txtSituacion.Name = "txtSituacion";
+            this.txtSituacion.Size = new System.Drawing.Size(351, 169);
+            this.txtSituacion.TabIndex = 23;
             // 
             // FrmPQRS
             // 
@@ -266,7 +266,7 @@ namespace Farmacia
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.lblInventario);
-            this.Controls.Add(this.txbSituacion);
+            this.Controls.Add(this.txtSituacion);
             this.Controls.Add(this.gpbPQR);
             this.Controls.Add(this.lblDescripcion);
             this.Controls.Add(this.pictureBox2);
@@ -294,12 +294,12 @@ namespace Farmacia
         private System.Windows.Forms.Label lblNombres;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblDescripcion;
-        private System.Windows.Forms.TextBox txbDireccion;
-        private System.Windows.Forms.TextBox txbNumId;
-        private System.Windows.Forms.TextBox txbNombres;
-        private System.Windows.Forms.TextBox txbEmail;
-        private System.Windows.Forms.TextBox txbTel;
-        private System.Windows.Forms.TextBox txbSituacion;
+        private System.Windows.Forms.TextBox txtDireccion;
+        private System.Windows.Forms.TextBox txtNumId;
+        private System.Windows.Forms.TextBox txtNombres;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TextBox txtTel;
+        private System.Windows.Forms.TextBox txtSituacion;
         private System.Windows.Forms.Button btnCerrarPQRS;
         private System.Windows.Forms.ComboBox cmbTipoRecurso;
         private System.Windows.Forms.ComboBox cmbTipoDocPQRS;

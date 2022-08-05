@@ -29,5 +29,34 @@ namespace Farmacia
             // Botón con opción de cerrar la ventana y retornar a menú principal
             this.Close();
         }
+
+        private void btnEnviar_Click(object sender, EventArgs e)
+        {
+            ValidarCampos();
+
+        }
+
+        private bool ValidarCampos()
+        {
+            bool ok = true;
+
+            if (txtProducto.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(txtProducto, "Ingresar nombre");
+            }
+
+            if (txtPresentacion.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(txtProducto, "Ingresar nombre");
+            }
+
+
+
+
+            return ok;
+        }
+
     }
 }
