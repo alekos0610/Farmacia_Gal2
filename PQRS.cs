@@ -167,5 +167,16 @@ namespace Farmacia
                 return;
             }
         }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            cmbTipoRecurso.Focus();
+            txtNumId.Clear();
+            txtNumId.Clear();
+            txtNombres.Clear();
+            txtTel.Clear();
+            txtDireccion.Clear();
+            txtEmail.Clear();
+        }
     }
 }

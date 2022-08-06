@@ -53,6 +53,7 @@ namespace Farmacia
             this.lblDescripcion = new System.Windows.Forms.Label();
             this.txtSituacion = new System.Windows.Forms.TextBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.btnLimpiar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.gpbPQR.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
@@ -70,6 +71,7 @@ namespace Farmacia
             // 
             // gpbPQR
             // 
+            this.gpbPQR.Controls.Add(this.btnLimpiar);
             this.gpbPQR.Controls.Add(this.btnEnviar);
             this.gpbPQR.Controls.Add(this.cmbTipoDocPQRS);
             this.gpbPQR.Controls.Add(this.cmbTipoRecurso);
@@ -99,7 +101,7 @@ namespace Farmacia
             this.btnEnviar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnEnviar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEnviar.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnEnviar.Location = new System.Drawing.Point(186, 270);
+            this.btnEnviar.Location = new System.Drawing.Point(142, 270);
             this.btnEnviar.Name = "btnEnviar";
             this.btnEnviar.Size = new System.Drawing.Size(75, 27);
             this.btnEnviar.TabIndex = 26;
@@ -128,7 +130,7 @@ namespace Farmacia
             this.btnCerrarPQRS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnCerrarPQRS.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCerrarPQRS.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnCerrarPQRS.Location = new System.Drawing.Point(279, 270);
+            this.btnCerrarPQRS.Location = new System.Drawing.Point(309, 270);
             this.btnCerrarPQRS.Name = "btnCerrarPQRS";
             this.btnCerrarPQRS.Size = new System.Drawing.Size(75, 27);
             this.btnCerrarPQRS.TabIndex = 22;
@@ -286,6 +288,19 @@ namespace Farmacia
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpiar.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnLimpiar.Location = new System.Drawing.Point(228, 270);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(75, 27);
+            this.btnLimpiar.TabIndex = 27;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = false;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            // 
             // FrmPQRS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -333,5 +348,6 @@ namespace Farmacia
         private System.Windows.Forms.ComboBox cmbTipoDocPQRS;
         private System.Windows.Forms.Button btnEnviar;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.Button btnLimpiar;
     }
 }

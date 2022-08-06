@@ -66,6 +66,7 @@ namespace Farmacia
             this.lblTipoId = new System.Windows.Forms.Label();
             this.lblNomUsuario = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.btnLimpiar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.gpbInfoPedido.SuspendLayout();
             this.gpbInfousuario.SuspendLayout();
@@ -272,6 +273,7 @@ namespace Farmacia
             // 
             // gpbInfousuario
             // 
+            this.gpbInfousuario.Controls.Add(this.btnLimpiar);
             this.gpbInfousuario.Controls.Add(this.btnEnviar);
             this.gpbInfousuario.Controls.Add(this.cmbTipoID);
             this.gpbInfousuario.Controls.Add(this.btnCerrar);
@@ -298,7 +300,7 @@ namespace Farmacia
             // 
             this.btnEnviar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnEnviar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEnviar.Location = new System.Drawing.Point(471, 142);
+            this.btnEnviar.Location = new System.Drawing.Point(395, 142);
             this.btnEnviar.Name = "btnEnviar";
             this.btnEnviar.Size = new System.Drawing.Size(79, 34);
             this.btnEnviar.TabIndex = 28;
@@ -433,6 +435,18 @@ namespace Farmacia
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpiar.Location = new System.Drawing.Point(480, 142);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(79, 34);
+            this.btnLimpiar.TabIndex = 29;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = false;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            // 
             // FrmDomicilios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -495,5 +509,6 @@ namespace Farmacia
         private System.Windows.Forms.Button btnEnviar;
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.ComboBox cmbPresentacion;
+        private System.Windows.Forms.Button btnLimpiar;
     }
 }

@@ -183,5 +183,21 @@ namespace Farmacia
                 return;
             }
         }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            txtProducto.Focus();
+            txtProducto.Clear();
+            txtCodigo.Clear();
+            txtConcentracion.Clear();
+            txtCantidad.Clear();
+            txtValorUnd.Clear();
+            txtValorT.Clear();
+            txtNomUsuario.Clear();
+            txtBarrio.Clear();
+            txtDireccion.Clear();
+            txtNumId.Clear();
+            txtTel.Clear();
+        }
     }
 }
