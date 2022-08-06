@@ -161,5 +161,16 @@ namespace Farmacia
                 return;
             }
         }
+
+        private void txtProducto_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Validación de datos númericos, mensaje de alerta de solo Letras.
+            if ((e.KeyChar >= 32 && e.KeyChar <= 64) || (e.KeyChar >= 91 && e.KeyChar <= 96) || (e.KeyChar >= 123 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Solo Letras", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+        }
     }
 }

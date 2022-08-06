@@ -238,6 +238,7 @@ namespace Farmacia
             this.txtProducto.Name = "txtProducto";
             this.txtProducto.Size = new System.Drawing.Size(162, 22);
             this.txtProducto.TabIndex = 3;
+            this.txtProducto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtProducto_KeyPress);
             // 
             // lblPresentacion
             // 
