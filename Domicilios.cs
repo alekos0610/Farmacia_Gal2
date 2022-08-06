@@ -12,10 +12,20 @@ namespace Farmacia
 
         private void FrmDomicilios_Load(object sender, EventArgs e)
         {
+            // Se crea lista desplegable para selección de presentación en inventario.
+            cmbPresentacion.Items.Add("Cápsula");
+            cmbPresentacion.Items.Add("Comprimido");
+            cmbPresentacion.Items.Add("Grajea");
+            cmbPresentacion.Items.Add("Jarabe");
+            cmbPresentacion.Items.Add("Suspensión");
+            cmbPresentacion.Items.Add("Polvo");
+
             // Se crea lista desplegable para selección de tipo de documento en identificación del usuario del menú domicilios.
             cmbTipoID.Items.Add("Tarjeta de identidad");
             cmbTipoID.Items.Add("Cedula de ciudadanía");
-            cmbTipoID.Items.Add("Cedula de Extranjería");
+            cmbTipoID.Items.Add("Pasaporte");
+            cmbTipoID.Items.Add("Registro Civil");
+            cmbTipoID.Items.Add("NIT");
 
             // Se crea lista Desplegable para selección de domiciliario.
             cmbDomiciliario.Items.Add("Michel Tarazona");
@@ -29,7 +39,7 @@ namespace Farmacia
             // Botón con opción de cerrar la ventana y retornar a menú principal
             this.Close();
         }
-
+                
         private void btnEnviar_Click(object sender, EventArgs e)
         {
             BorrarMensaje();
@@ -39,7 +49,7 @@ namespace Farmacia
             }
 
         }
-
+        // Validación de Campos.
         private bool ValidarCampos()
         {
             bool ok = true;
@@ -49,13 +59,7 @@ namespace Farmacia
                 ok = false;
                 errorProvider1.SetError(txtProducto, "Ingresar nombre del Producto");
             }
-
-            if (txtPresentacion.Text == "")
-            {
-                ok = false;
-                errorProvider1.SetError(txtProducto, "Ingresar el tipo de presentación");
-            }
-
+                        
             if (txtCodigo.Text == "")
             {
                 ok = false;
@@ -91,14 +95,12 @@ namespace Farmacia
 
         private void BorrarMensaje()
         {
-            errorProvider1.SetError(txtProducto, "");
-            errorProvider1.SetError(txtPresentacion, "");
+            errorProvider1.SetError(txtProducto, "");           
             errorProvider1.SetError(txtCodigo, "");
             errorProvider1.SetError(txtConcentracion, "");
             errorProvider1.SetError(txtCantidad, "");
             errorProvider1.SetError(txtValorUnd, "");
-            errorProvider1.SetError(txtValorT, "");
-                
+            errorProvider1.SetError(txtValorT, "");                
         }
 
         private void txtCantidad_Validating(object sender, System.ComponentModel.CancelEventArgs e)
@@ -111,6 +113,52 @@ namespace Farmacia
             else
             {
                 errorProvider1.SetError(txtCantidad, "");
+            }
+        }
+
+        private void txtCodigo_Validating(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            int num;
+            if (!int.TryParse(txtCodigo.Text, out num))
+            {
+                errorProvider1.SetError(txtCodigo, "Ingrese un valor númerico");
+            }
+            else
+            {
+                errorProvider1.SetError(txtCodigo, "");
+            }
+        }
+
+        private void txtCantidad_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Validación de datos númericos, mensaje de alerta de solo números.
+            if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Solo Números", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void txtTel_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Validación de datos númericos, mensaje de alerta de solo números.
+            if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Solo Números", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void txtNumId_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Validación de datos númericos, mensaje de alerta de solo números.
+            if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Solo Números", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
             }
         }
     }

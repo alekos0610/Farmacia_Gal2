@@ -29,9 +29,11 @@ namespace Farmacia
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPQRS));
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.gpbPQR = new System.Windows.Forms.GroupBox();
+            this.btnEnviar = new System.Windows.Forms.Button();
             this.cmbTipoDocPQRS = new System.Windows.Forms.ComboBox();
             this.cmbTipoRecurso = new System.Windows.Forms.ComboBox();
             this.btnCerrarPQRS = new System.Windows.Forms.Button();
@@ -50,22 +52,25 @@ namespace Farmacia
             this.lblInventario = new System.Windows.Forms.Label();
             this.lblDescripcion = new System.Windows.Forms.Label();
             this.txtSituacion = new System.Windows.Forms.TextBox();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.gpbPQR.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(490, -1);
+            this.pictureBox2.Location = new System.Drawing.Point(511, 34);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(298, 236);
+            this.pictureBox2.Size = new System.Drawing.Size(277, 204);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
             // gpbPQR
             // 
+            this.gpbPQR.Controls.Add(this.btnEnviar);
             this.gpbPQR.Controls.Add(this.cmbTipoDocPQRS);
             this.gpbPQR.Controls.Add(this.cmbTipoRecurso);
             this.gpbPQR.Controls.Add(this.btnCerrarPQRS);
@@ -82,12 +87,25 @@ namespace Farmacia
             this.gpbPQR.Controls.Add(this.lblTel);
             this.gpbPQR.Controls.Add(this.lblTipId);
             this.gpbPQR.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gpbPQR.Location = new System.Drawing.Point(23, 74);
+            this.gpbPQR.Location = new System.Drawing.Point(12, 67);
             this.gpbPQR.Name = "gpbPQR";
-            this.gpbPQR.Size = new System.Drawing.Size(403, 364);
+            this.gpbPQR.Size = new System.Drawing.Size(403, 321);
             this.gpbPQR.TabIndex = 2;
             this.gpbPQR.TabStop = false;
             this.gpbPQR.Text = "Información PQR";
+            // 
+            // btnEnviar
+            // 
+            this.btnEnviar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnEnviar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEnviar.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnEnviar.Location = new System.Drawing.Point(186, 270);
+            this.btnEnviar.Name = "btnEnviar";
+            this.btnEnviar.Size = new System.Drawing.Size(75, 27);
+            this.btnEnviar.TabIndex = 26;
+            this.btnEnviar.Text = "Enviar";
+            this.btnEnviar.UseVisualStyleBackColor = false;
+            this.btnEnviar.Click += new System.EventHandler(this.btnEnviar_Click);
             // 
             // cmbTipoDocPQRS
             // 
@@ -110,7 +128,7 @@ namespace Farmacia
             this.btnCerrarPQRS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnCerrarPQRS.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCerrarPQRS.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnCerrarPQRS.Location = new System.Drawing.Point(308, 322);
+            this.btnCerrarPQRS.Location = new System.Drawing.Point(279, 270);
             this.btnCerrarPQRS.Name = "btnCerrarPQRS";
             this.btnCerrarPQRS.Size = new System.Drawing.Size(75, 27);
             this.btnCerrarPQRS.TabIndex = 22;
@@ -153,6 +171,8 @@ namespace Farmacia
             this.txtNumId.Name = "txtNumId";
             this.txtNumId.Size = new System.Drawing.Size(168, 22);
             this.txtNumId.TabIndex = 11;
+            this.txtNumId.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNumId_KeyPress);
+            this.txtNumId.Validating += new System.ComponentModel.CancelEventHandler(this.txtNumId_Validating);
             // 
             // label1
             // 
@@ -197,6 +217,8 @@ namespace Farmacia
             this.txtTel.Name = "txtTel";
             this.txtTel.Size = new System.Drawing.Size(168, 22);
             this.txtTel.TabIndex = 12;
+            this.txtTel.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTel_KeyPress);
+            this.txtTel.Validating += new System.ComponentModel.CancelEventHandler(this.txtTel_Validating);
             // 
             // lblEmail
             // 
@@ -244,7 +266,7 @@ namespace Farmacia
             // 
             this.lblDescripcion.AutoSize = true;
             this.lblDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescripcion.Location = new System.Drawing.Point(434, 250);
+            this.lblDescripcion.Location = new System.Drawing.Point(434, 241);
             this.lblDescripcion.Name = "lblDescripcion";
             this.lblDescripcion.Size = new System.Drawing.Size(164, 16);
             this.lblDescripcion.TabIndex = 8;
@@ -253,11 +275,15 @@ namespace Farmacia
             // txtSituacion
             // 
             this.txtSituacion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtSituacion.Location = new System.Drawing.Point(437, 269);
+            this.txtSituacion.Location = new System.Drawing.Point(421, 260);
             this.txtSituacion.Multiline = true;
             this.txtSituacion.Name = "txtSituacion";
-            this.txtSituacion.Size = new System.Drawing.Size(351, 169);
+            this.txtSituacion.Size = new System.Drawing.Size(367, 178);
             this.txtSituacion.TabIndex = 23;
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // FrmPQRS
             // 
@@ -277,6 +303,7 @@ namespace Farmacia
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.gpbPQR.ResumeLayout(false);
             this.gpbPQR.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -303,5 +330,7 @@ namespace Farmacia
         private System.Windows.Forms.Button btnCerrarPQRS;
         private System.Windows.Forms.ComboBox cmbTipoRecurso;
         private System.Windows.Forms.ComboBox cmbTipoDocPQRS;
+        private System.Windows.Forms.Button btnEnviar;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

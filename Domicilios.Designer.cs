@@ -34,22 +34,24 @@ namespace Farmacia
             this.lblInventario = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.gpbInfoPedido = new System.Windows.Forms.GroupBox();
+            this.cmbPresentacion = new System.Windows.Forms.ComboBox();
+            this.cmbDomiciliario = new System.Windows.Forms.ComboBox();
             this.lblTotal = new System.Windows.Forms.Label();
             this.txtValorT = new System.Windows.Forms.TextBox();
             this.txtCantidad = new System.Windows.Forms.TextBox();
             this.lblCantidad = new System.Windows.Forms.Label();
             this.txtValorUnd = new System.Windows.Forms.TextBox();
             this.lblVUnd = new System.Windows.Forms.Label();
+            this.lblNomDomiciliario = new System.Windows.Forms.Label();
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.lblCodigo = new System.Windows.Forms.Label();
-            this.txtPresentacion = new System.Windows.Forms.TextBox();
             this.txtConcentracion = new System.Windows.Forms.TextBox();
             this.txtProducto = new System.Windows.Forms.TextBox();
             this.lblPresentacion = new System.Windows.Forms.Label();
             this.lblConcentracion = new System.Windows.Forms.Label();
             this.lblProducto = new System.Windows.Forms.Label();
             this.gpbInfousuario = new System.Windows.Forms.GroupBox();
-            this.cmbDomiciliario = new System.Windows.Forms.ComboBox();
+            this.btnEnviar = new System.Windows.Forms.Button();
             this.cmbTipoID = new System.Windows.Forms.ComboBox();
             this.btnCerrar = new System.Windows.Forms.Button();
             this.txtTel = new System.Windows.Forms.TextBox();
@@ -57,14 +59,12 @@ namespace Farmacia
             this.txtBarrio = new System.Windows.Forms.TextBox();
             this.txtNomUsuario = new System.Windows.Forms.TextBox();
             this.txtNumId = new System.Windows.Forms.TextBox();
-            this.lblNomDomiciliario = new System.Windows.Forms.Label();
             this.lblTel = new System.Windows.Forms.Label();
             this.lblBarrio = new System.Windows.Forms.Label();
             this.lblDireccion = new System.Windows.Forms.Label();
             this.lblNumId = new System.Windows.Forms.Label();
             this.lblTipoId = new System.Windows.Forms.Label();
             this.lblNomUsuario = new System.Windows.Forms.Label();
-            this.btnEnviar = new System.Windows.Forms.Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.gpbInfoPedido.SuspendLayout();
@@ -98,6 +98,7 @@ namespace Farmacia
             // 
             // gpbInfoPedido
             // 
+            this.gpbInfoPedido.Controls.Add(this.cmbPresentacion);
             this.gpbInfoPedido.Controls.Add(this.cmbDomiciliario);
             this.gpbInfoPedido.Controls.Add(this.lblTotal);
             this.gpbInfoPedido.Controls.Add(this.txtValorT);
@@ -108,7 +109,6 @@ namespace Farmacia
             this.gpbInfoPedido.Controls.Add(this.lblNomDomiciliario);
             this.gpbInfoPedido.Controls.Add(this.txtCodigo);
             this.gpbInfoPedido.Controls.Add(this.lblCodigo);
-            this.gpbInfoPedido.Controls.Add(this.txtPresentacion);
             this.gpbInfoPedido.Controls.Add(this.txtConcentracion);
             this.gpbInfoPedido.Controls.Add(this.txtProducto);
             this.gpbInfoPedido.Controls.Add(this.lblPresentacion);
@@ -121,6 +121,22 @@ namespace Farmacia
             this.gpbInfoPedido.TabIndex = 6;
             this.gpbInfoPedido.TabStop = false;
             this.gpbInfoPedido.Text = "Información del pedido";
+            // 
+            // cmbPresentacion
+            // 
+            this.cmbPresentacion.FormattingEnabled = true;
+            this.cmbPresentacion.Location = new System.Drawing.Point(165, 68);
+            this.cmbPresentacion.Name = "cmbPresentacion";
+            this.cmbPresentacion.Size = new System.Drawing.Size(162, 24);
+            this.cmbPresentacion.TabIndex = 29;
+            // 
+            // cmbDomiciliario
+            // 
+            this.cmbDomiciliario.FormattingEnabled = true;
+            this.cmbDomiciliario.Location = new System.Drawing.Point(165, 136);
+            this.cmbDomiciliario.Name = "cmbDomiciliario";
+            this.cmbDomiciliario.Size = new System.Drawing.Size(162, 24);
+            this.cmbDomiciliario.TabIndex = 28;
             // 
             // lblTotal
             // 
@@ -147,6 +163,7 @@ namespace Farmacia
             this.txtCantidad.Name = "txtCantidad";
             this.txtCantidad.Size = new System.Drawing.Size(139, 22);
             this.txtCantidad.TabIndex = 11;
+            this.txtCantidad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCantidad_KeyPress);
             this.txtCantidad.Validating += new System.ComponentModel.CancelEventHandler(this.txtCantidad_Validating);
             // 
             // lblCantidad
@@ -177,6 +194,16 @@ namespace Farmacia
             this.lblVUnd.TabIndex = 8;
             this.lblVUnd.Text = "Valor unitario";
             // 
+            // lblNomDomiciliario
+            // 
+            this.lblNomDomiciliario.AutoSize = true;
+            this.lblNomDomiciliario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNomDomiciliario.Location = new System.Drawing.Point(6, 136);
+            this.lblNomDomiciliario.Name = "lblNomDomiciliario";
+            this.lblNomDomiciliario.Size = new System.Drawing.Size(153, 16);
+            this.lblNomDomiciliario.TabIndex = 21;
+            this.lblNomDomiciliario.Text = "Domiciliario que entrega";
+            // 
             // txtCodigo
             // 
             this.txtCodigo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -184,6 +211,7 @@ namespace Farmacia
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(162, 22);
             this.txtCodigo.TabIndex = 7;
+            this.txtCodigo.Validating += new System.ComponentModel.CancelEventHandler(this.txtCodigo_Validating);
             // 
             // lblCodigo
             // 
@@ -194,14 +222,6 @@ namespace Farmacia
             this.lblCodigo.Size = new System.Drawing.Size(129, 16);
             this.lblCodigo.TabIndex = 6;
             this.lblCodigo.Text = "Código del producto";
-            // 
-            // txtPresentacion
-            // 
-            this.txtPresentacion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtPresentacion.Location = new System.Drawing.Point(165, 70);
-            this.txtPresentacion.Name = "txtPresentacion";
-            this.txtPresentacion.Size = new System.Drawing.Size(162, 22);
-            this.txtPresentacion.TabIndex = 5;
             // 
             // txtConcentracion
             // 
@@ -273,13 +293,17 @@ namespace Farmacia
             this.gpbInfousuario.TabStop = false;
             this.gpbInfousuario.Text = "Información del usuario";
             // 
-            // cmbDomiciliario
+            // btnEnviar
             // 
-            this.cmbDomiciliario.FormattingEnabled = true;
-            this.cmbDomiciliario.Location = new System.Drawing.Point(165, 136);
-            this.cmbDomiciliario.Name = "cmbDomiciliario";
-            this.cmbDomiciliario.Size = new System.Drawing.Size(162, 24);
-            this.cmbDomiciliario.TabIndex = 28;
+            this.btnEnviar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnEnviar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEnviar.Location = new System.Drawing.Point(471, 142);
+            this.btnEnviar.Name = "btnEnviar";
+            this.btnEnviar.Size = new System.Drawing.Size(79, 34);
+            this.btnEnviar.TabIndex = 28;
+            this.btnEnviar.Text = "Enviar";
+            this.btnEnviar.UseVisualStyleBackColor = false;
+            this.btnEnviar.Click += new System.EventHandler(this.btnEnviar_Click);
             // 
             // cmbTipoID
             // 
@@ -304,15 +328,16 @@ namespace Farmacia
             // txtTel
             // 
             this.txtTel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtTel.Location = new System.Drawing.Point(484, 92);
+            this.txtTel.Location = new System.Drawing.Point(484, 86);
             this.txtTel.Name = "txtTel";
             this.txtTel.Size = new System.Drawing.Size(139, 22);
             this.txtTel.TabIndex = 27;
+            this.txtTel.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTel_KeyPress);
             // 
             // txtDireccion
             // 
             this.txtDireccion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtDireccion.Location = new System.Drawing.Point(484, 60);
+            this.txtDireccion.Location = new System.Drawing.Point(484, 56);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(139, 22);
             this.txtDireccion.TabIndex = 26;
@@ -320,7 +345,7 @@ namespace Farmacia
             // txtBarrio
             // 
             this.txtBarrio.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtBarrio.Location = new System.Drawing.Point(484, 21);
+            this.txtBarrio.Location = new System.Drawing.Point(484, 25);
             this.txtBarrio.Name = "txtBarrio";
             this.txtBarrio.Size = new System.Drawing.Size(139, 22);
             this.txtBarrio.TabIndex = 25;
@@ -340,16 +365,7 @@ namespace Farmacia
             this.txtNumId.Name = "txtNumId";
             this.txtNumId.Size = new System.Drawing.Size(162, 22);
             this.txtNumId.TabIndex = 15;
-            // 
-            // lblNomDomiciliario
-            // 
-            this.lblNomDomiciliario.AutoSize = true;
-            this.lblNomDomiciliario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNomDomiciliario.Location = new System.Drawing.Point(6, 136);
-            this.lblNomDomiciliario.Name = "lblNomDomiciliario";
-            this.lblNomDomiciliario.Size = new System.Drawing.Size(153, 16);
-            this.lblNomDomiciliario.TabIndex = 21;
-            this.lblNomDomiciliario.Text = "Domiciliario que entrega";
+            this.txtNumId.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNumId_KeyPress);
             // 
             // lblTel
             // 
@@ -375,7 +391,7 @@ namespace Farmacia
             // 
             this.lblDireccion.AutoSize = true;
             this.lblDireccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDireccion.Location = new System.Drawing.Point(385, 62);
+            this.lblDireccion.Location = new System.Drawing.Point(388, 58);
             this.lblDireccion.Name = "lblDireccion";
             this.lblDireccion.Size = new System.Drawing.Size(64, 16);
             this.lblDireccion.TabIndex = 18;
@@ -410,18 +426,6 @@ namespace Farmacia
             this.lblNomUsuario.Size = new System.Drawing.Size(115, 16);
             this.lblNomUsuario.TabIndex = 15;
             this.lblNomUsuario.Text = "Nombre completo";
-            // 
-            // btnEnviar
-            // 
-            this.btnEnviar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnEnviar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEnviar.Location = new System.Drawing.Point(471, 142);
-            this.btnEnviar.Name = "btnEnviar";
-            this.btnEnviar.Size = new System.Drawing.Size(79, 34);
-            this.btnEnviar.TabIndex = 28;
-            this.btnEnviar.Text = "Enviar";
-            this.btnEnviar.UseVisualStyleBackColor = false;
-            this.btnEnviar.Click += new System.EventHandler(this.btnEnviar_Click);
             // 
             // errorProvider1
             // 
@@ -460,7 +464,6 @@ namespace Farmacia
         private System.Windows.Forms.GroupBox gpbInfousuario;
         private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.Label lblCodigo;
-        private System.Windows.Forms.TextBox txtPresentacion;
         private System.Windows.Forms.TextBox txtConcentracion;
         private System.Windows.Forms.TextBox txtProducto;
         private System.Windows.Forms.Label lblPresentacion;
@@ -489,5 +492,6 @@ namespace Farmacia
         private System.Windows.Forms.ComboBox cmbDomiciliario;
         private System.Windows.Forms.Button btnEnviar;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.ComboBox cmbPresentacion;
     }
 }
