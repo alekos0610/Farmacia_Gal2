@@ -191,6 +191,7 @@ namespace Farmacia
             this.txtNombres.Name = "txtNombres";
             this.txtNombres.Size = new System.Drawing.Size(168, 22);
             this.txtNombres.TabIndex = 9;
+            this.txtNombres.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombres_KeyPress);
             // 
             // lblNombres
             // 

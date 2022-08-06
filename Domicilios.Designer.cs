@@ -358,6 +358,7 @@ namespace Farmacia
             this.txtNomUsuario.Name = "txtNomUsuario";
             this.txtNomUsuario.Size = new System.Drawing.Size(162, 22);
             this.txtNomUsuario.TabIndex = 23;
+            this.txtNomUsuario.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNomUsuario_KeyPress);
             // 
             // txtNumId
             // 

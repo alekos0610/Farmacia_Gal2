@@ -154,5 +154,10 @@ namespace Farmacia
                 return;
             }
         }
+
+        private void txtNombres_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
     }
 }
