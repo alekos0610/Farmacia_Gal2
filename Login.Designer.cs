@@ -182,8 +182,7 @@ namespace Farmacia
             this.Controls.Add(this.pibLogin);
             this.Name = "login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Login";
-            this.Load += new System.EventHandler(this.login_Load);
+            this.Text = "Login";           
             ((System.ComponentModel.ISupportInitialize)(this.pibLogin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbOcultar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMostrar)).EndInit();

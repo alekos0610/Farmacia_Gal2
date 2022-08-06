@@ -83,10 +83,6 @@ namespace Farmacia
             // ShowDialog para solo poder interactuar con el formulario nuevo y no saltar de uno a otro.
             Form.ShowDialog();
         }
-
-        private void login_Load(object sender, EventArgs e)
-        {
-
-        }
+               
     }
 }
