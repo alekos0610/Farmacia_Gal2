@@ -31,11 +31,27 @@ namespace Farmacia
         {
             //Botón para cerrar ventana y retornar a menú principal
             this.Close();
+        }             
+
+        private void txtProducto_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Validación de datos, mensaje de alerta de solo Letras.
+            if ((e.KeyChar >= 32 && e.KeyChar <= 64) || (e.KeyChar >= 91 && e.KeyChar <= 96) || (e.KeyChar >= 123 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Solo Letras", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
         }
 
-        private void backgroundWorker1_DoWork(object sender, System.ComponentModel.DoWorkEventArgs e)
+        private void btnLimpiar_Click(object sender, EventArgs e)
         {
-
+            cmbEstante.Focus();            
+            txtProducto.Clear();
+            txtCodigo.Clear();
+            txtCtracion.Clear();            
+            txtCant.Clear();
+            txtVenc.Clear();
         }
     }
 }
