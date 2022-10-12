@@ -33,6 +33,7 @@ namespace Farmacia
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPQRS));
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.gpbPQR = new System.Windows.Forms.GroupBox();
+            this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnEnviar = new System.Windows.Forms.Button();
             this.cmbTipoDocPQRS = new System.Windows.Forms.ComboBox();
             this.cmbTipoRecurso = new System.Windows.Forms.ComboBox();
@@ -53,7 +54,6 @@ namespace Farmacia
             this.lblDescripcion = new System.Windows.Forms.Label();
             this.txtSituacion = new System.Windows.Forms.TextBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.btnLimpiar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.gpbPQR.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
@@ -96,6 +96,19 @@ namespace Farmacia
             this.gpbPQR.TabStop = false;
             this.gpbPQR.Text = "Información PQR";
             // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpiar.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnLimpiar.Location = new System.Drawing.Point(228, 270);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(75, 27);
+            this.btnLimpiar.TabIndex = 27;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = false;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            // 
             // btnEnviar
             // 
             this.btnEnviar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
@@ -112,6 +125,8 @@ namespace Farmacia
             // cmbTipoDocPQRS
             // 
             this.cmbTipoDocPQRS.FormattingEnabled = true;
+            this.cmbTipoDocPQRS.Items.AddRange(new object[] {
+            ""});
             this.cmbTipoDocPQRS.Location = new System.Drawing.Point(186, 67);
             this.cmbTipoDocPQRS.Name = "cmbTipoDocPQRS";
             this.cmbTipoDocPQRS.Size = new System.Drawing.Size(168, 24);
@@ -120,6 +135,8 @@ namespace Farmacia
             // cmbTipoRecurso
             // 
             this.cmbTipoRecurso.FormattingEnabled = true;
+            this.cmbTipoRecurso.Items.AddRange(new object[] {
+            ""});
             this.cmbTipoRecurso.Location = new System.Drawing.Point(186, 37);
             this.cmbTipoRecurso.Name = "cmbTipoRecurso";
             this.cmbTipoRecurso.Size = new System.Drawing.Size(168, 24);
@@ -287,19 +304,6 @@ namespace Farmacia
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
-            // 
-            // btnLimpiar
-            // 
-            this.btnLimpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiar.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnLimpiar.Location = new System.Drawing.Point(228, 270);
-            this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(75, 27);
-            this.btnLimpiar.TabIndex = 27;
-            this.btnLimpiar.Text = "Limpiar";
-            this.btnLimpiar.UseVisualStyleBackColor = false;
-            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // FrmPQRS
             // 

@@ -57,6 +57,7 @@ namespace Farmacia
             this.pibLogin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pibLogin.TabIndex = 0;
             this.pibLogin.TabStop = false;
+            this.pibLogin.Click += new System.EventHandler(this.pibLogin_Click);
             // 
             // lblUsuario
             // 
@@ -182,7 +183,7 @@ namespace Farmacia
             this.Controls.Add(this.pibLogin);
             this.Name = "login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Login";           
+            this.Text = "Login";
             ((System.ComponentModel.ISupportInitialize)(this.pibLogin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbOcultar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMostrar)).EndInit();

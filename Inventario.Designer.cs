@@ -272,7 +272,7 @@ namespace Farmacia
             this.btnGuardar.Size = new System.Drawing.Size(75, 34);
             this.btnGuardar.TabIndex = 1;
             this.btnGuardar.Text = "Guardar";
-            this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.UseVisualStyleBackColor = false;           
             // 
             // btnNuevo
             // 
@@ -371,11 +371,11 @@ namespace Farmacia
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnCerrarInventario);
             this.Controls.Add(this.dtpFechaInvetario);
             this.Controls.Add(this.btnNuevo);
-            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox2);

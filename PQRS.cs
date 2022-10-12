@@ -28,7 +28,7 @@ namespace Farmacia
             cmbTipoRecurso.Items.Add("Felicitaciónes");
             cmbTipoRecurso.Items.Add("Denuncia");
 
-            // Se crea menú desplegable para elección de Documento para PQRS
+            // Se crea menú desplegable para elección de Documento para PQRS           
             cmbTipoDocPQRS.Items.Add("Anonimo");
             cmbTipoDocPQRS.Items.Add("Cedula de ciudadanía");
             cmbTipoDocPQRS.Items.Add("Tarjeta de identidad");
@@ -170,7 +170,7 @@ namespace Farmacia
 
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
-            cmbTipoRecurso.Focus();
+            cmbTipoRecurso.Focus();                      
             txtNumId.Clear();
             txtNumId.Clear();
             txtNombres.Clear();
